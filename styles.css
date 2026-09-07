@@ -4,12 +4,15 @@ If this site goes down in the future, this font will break. Could try to downloa
 */
 
 @import url("https://fonts.googleapis.com/css?family=Cascadia Code");
+@import url("https://fonts.googleapis.com/css?family=Garamond");
+@import url("https://fonts.googleapis.com/css?family=Inter");
+
 body{
     font-family: "Cascadia Code", monospace;
 }
 
 p{
-    margin: 100px, 100px;
+    margin-top: 100px, 100px;
 }
 
 a:active{
@@ -27,9 +30,54 @@ iframe{
     height: 100vh;
 }
 
-/*Creates a class to align images in a div block from left to right, with gaps and centering*/
+/*aligns images in a div block from left to right, with gaps and centering*/
 .image-row{
     display: flex;
     gap: 10px;
     justify-content: center;
+}
+
+.resume-header{
+    text-align: center;
+}
+
+.bullet-container{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+.horizontal-list{
+    display: flex;
+    justify-content: center;
+    gap: 24px;
+}
+
+.horizontal-list li{
+    list-style-type: disc;
+}
+
+.resume-style{
+    margin: 1in;
+    h1{
+        font-family: 'Garamond';
+    }
+    h2{
+        font-family: 'Inter';
+    }
+    h3{
+        font-family: 'Inter';
+    }
+    p{
+        font-family: 'Inter';
+    }
+    ul{
+        font-family: 'Inter';
+    }
+    /*class to create a header with date shifted to the right*/
+    .resume-date{
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+    }
 }
